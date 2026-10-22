@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi - Puri Ageng Blahbatuh</title>
+    <link rel="icon" type="image/png" href="img/logopuri.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <img src="img/logopuri 2.png" alt="Logo" class="logo">
+        <button class="hamburger" id="hamburger">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" data-id="nav-beranda">Beranda</a></li>
+                <li><a href="informasi.html" data-id="nav-daya">Informasi</a></li>
+                <li><a href="daya-tarik.html" data-id="nav-">Daya Tarik</a></li>
+                <li><a href="galeri.html" data-id="nav-galeri">Galeri</a></li>
+                <li><a href="virtual-tour/index.htm" data-id="nav-tour">Virtual Tour</a></li>
+                <li><a href="tentang.html" data-id="nav-tentang">Tentang</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher"></div>
+    </header>
+<style>
+.info-kontak-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.info-kontak-section h1, .info-kontak-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: "Pontano Sans", sans-serif;
+}
+
+.info-kontak-section.intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.denah-section {
+    background-color: #fff8f0; 
+;
+}
+
+.denah-placeholder {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px dashed #ccc;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.denah-placeholder p {
+    color: #888;
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 20px;
+}
+
+/* === LOKASI SECTION === */
+.lokasi-section {
+    padding: 60px 40px;
+    background-color: #ffffff; /* Warna yang konsisten dengan tema */
+    font-family: "Pontano Sans", sans-serif;
+}
+
+.lokasi-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+/* Kolom Kiri: Informasi Teks */
+.lokasi-info {
+    flex: 1; /* Mengambil ruang yang tersedia */
+    min-width: 300px; /* Lebar minimum sebelum wrap */
+}
+
+.lokasi-title {
+    font-size: 2.5rem; /* Ukuran sama dengan judul lain */
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.lokasi-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.lokasi-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.lokasi-social-icons {
+    display: flex;
+    gap: 20px; /* Jarak antar ikon */
+    margin-top: 10px;
+}
+
+.lokasi-social-icons a {
+    display: inline-block;
+}
+
+.lokasi-social-icons img {
+    width: 32px; /* Ukuran ikon */
+    height: 32px;
+    transition: transform 0.2s ease;
+}
+
+.lokasi-social-icons img:hover {
+    transform: scale(1.1); /* Efek hover */
+}
+
+
+/* Kolom Kanan: Peta */
+.lokasi-peta {
+    flex: 1.2; /* Sedikit lebih besar dari kolom teks */
+    min-width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Menyembunyikan sudut iframe yang tajam */
+}
+
+.lokasi-peta iframe {
+    width: 100%;
+    height: 450px; /* Tinggi peta */
+    display: block; /* Menghapus spasi di bawah iframe */
+}
+
+/* Penyesuaian untuk layar kecil (Mobile) */
+@media (max-width: 768px) {
+    .lokasi-container {
+        flex-direction: column; /* Tumpuk elemen secara vertikal */
+        gap: 40px;
+    }
+
+    .lokasi-title {
+        font-size: 2rem;
+    }
+}
+</style>
+
+    <section class="hero3" id="beranda">
+        <img src="img/img41.jpg" alt="Hero" class="hero-bg3">
+        <div class="hero-text">
+            <p data-id="hero-desc">
+                Puri Ageng Blahbatuh adalah sebuah istana atau kediaman kerajaan bersejarah yang terletak di Kecamatan Blahbatuh, Kabupaten Gianyar, Bali. Puri ini merupakan salah satu puri paling penting dan berpengaruh dalam sejarah Bali, tidak hanya sebagai pusat pemerintahan di masa lampau, tetapi juga sebagai benteng budaya dan spiritual.</p>
+            </p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="sejarah-revisi-container">
+
+            <div class="sejarah-revisi-kolom-gambar">
+                <img src="img/img2.jpg" alt="Visual Sejarah Puri">
+            </div>
+
+            <div class="sejarah-revisi-kolom-teks">
+                <p class="sejarah-subjudul">Pelajari Lebih Dalam</p>
+                <h1>Sejarah Puri Ageng Blahbatuh</h1>
+
+                <p>Sejarah Puri dimulai dari leluhur dari Puri Ageng Blahbatuh I Gusti Ngurah Djelantik berasal dari Sri Kesari Warmadewa, 
+                    yang juga dikenal dengan nama Sri Wisnuwangsa yang diberi mandat oleh kerajaan majapahit untuk menjadi penguasa pasal di bali. 
+                    I Gusti Ngurah Djelantik I sampai dengan I Gusti Ngurah Djelantik IV yang merupakan Perdana Menteri Patih sakti yang berkuasa di Singaraja. 
+                    Namun mulai dari I Gusti Ngurah Djelantik V sampai I Gusti Ngurah Djelantik VIII diberi amanah sebagai Perdana Menteri atau 
+                    Patih di Kerajaan Gelgel (Klungkung). Dan juga ditugaskan sebagai pemimpin untuk menaklukkan kerajaan- Kerajaan di luar Pulau Bali saat itu. 
+                    </p>
+            
+                <p>Pada masa kejayaan Kerajaan Gelgel di bawah pimpinan Dalem Waturenggong, keluarga ini bersama rombongan pasukan kemudian pindah dan menetap di 
+                    Blahbatuh pada abad ke-16 dan kemudian mendirikan sebuah kerajaan kecil di Blahbatuh. Awalnya mereka tiba di Desa Tojan, Pering, yang berada di sebelah selatan Blahbatuh.
+                    Setelah dua generasi, mereka membangun Puri dengan titik pusatnya di Catus pata atau titik nol dari desa blahbatuh.</p>
+            </div>
+        </div>
+    </main>
+
+   <section class="info-kontak-section denah-section">
+            <h2>Denah Areal Puri</h2>
+            <div class="denah-placeholder">
+                <p>Gambar denah atau peta areal Puri Ageng Blahbatuh dapat ditempatkan di sini.</p>
+            </div>
+        </section>
+
+    <section class="lokasi-section">
+    <div class="lokasi-container">
+        <div class="lokasi-info">
+            <h2 class="lokasi-title">Lokasi</h2>
+
+            <h3 class="lokasi-subtitle">Alamat</h3>
+            <p class="lokasi-text">Jl. Wisma Udayana No.2X, Blahbatuh, Kec. Blahbatuh,
+                Kabupaten Gianyar, Bali</p>
+            
+            <h3 class="lokasi-subtitle">Telepon/WhatsApp</h3>
+            <p class="lokasi-text">0851 0173 0894</p>
+            <p class="lokasi-text">0818 0539 2983 (Mangde)</p>
+            
+            <h3 class="lokasi-subtitle">Email</h3>
+            <p class="lokasi-text">sales@balipuri.com</p>
+
+            <div class="lokasi-social-icons">
+                <a href="https://www.instagram.com/puri_blahbatuh/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://share.google/YM2K5qlIqAucu0Dq1" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="lokasi-peta">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.316955210695!2d115.29833927456663!3d-8.565490386883857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd215e22c255f8f%3A0x9eb867aeae7854a1!2sPURI%20AGENG%20BLAHBATUH!5e0!3m2!1sen!2sid!4v1747462815999!5m2!1sen!2sid" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+    <footer class="page-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="logo-area">
+                    <img src="img/logopuri.png" lt="logo2" class="logo2">
+                </div>
+                <div class="details-area">
+                    <h2 class="hotel-name">PURI AGENG BLAHBATUH</h2>
+                    <p class="address">Jl. Wisma Udayana No.2X, Blahbatuh, Kec. Blahbatuh, <br> Kabupaten Gianyar, Bali </p>
+                </div>
+           
+             <div class="contact-area">
+                <p><strong>Email:</strong><br>sales@balipuri.com</p>
+                <p href="https://instagram.com/puri_blahbatuh" target="_blank"><strong>Instagram:</strong><br>@puri_blahbatuh</p>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-left">
+                    <p class="copyright">2025 - ITB STIKOM BALI</p>
+                </div>
+            </div>
+            </div>
+        </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

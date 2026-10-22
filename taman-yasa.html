@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taman Yasa - Puri Ageng Blahbatuh</title>
+    <link rel="icon" type="image/png" href="img/logopuri.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <header class="navbar">
+        <img src="img/logopuri 2.png" alt="Logo" class="logo">
+        <button class="hamburger" id="hamburger">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" data-id="nav-beranda">Beranda</a></li>
+                <li><a href="informasi.html" data-id="nav-daya">Informasi</a></li>
+                <li><a href="daya-tarik.html" data-id="nav-">Daya Tarik</a></li>
+                <li><a href="galeri.html" data-id="nav-galeri">Galeri</a></li>
+                <li><a href="virtual-tour/index.htm" data-id="nav-tour">Virtual Tour</a></li>
+                <li><a href="tentang.html" data-id="nav-tentang">Tentang</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher"></div>
+    </header>
+
+    <main class="main-content">
+        <div class="berita-container">
+            <article class="berita-artikel">
+                <h1 style="text-align: left;">Taman Yasa</h1>
+                <br>
+                <img src="img/img11.jpg" alt="Gambar Berita Utama"
+                    class="berita-gambar-utama">
+
+                <p>Taman Yasa merupakan sebuah taman teratai yang dirancang dengan konsep Padma. 
+                    Di tengah taman ini, terdapat sebuah Balai Kambang yang seolah-olah mengapung, menyerupai bunga teratai di tengah kolam 
+                    . Fungsi utama dari Bale Kambang ini adalah sebagai tempat yang dikhususkan bagi para keluarga dan leluhur Puri untuk 
+                    melaksanakan tapa, brata, yoga, dan semadi. Dari lokasi inilah, mereka memanjatkan doa dan pemujaan kepada
+                     Yang Maha Kuasa, khususnya kepada Ida Susunan atau Dewa yang bersemayam di Tohlangkir atau Gunung Agung. 
+                     Tujuan dari ritual ini adalah untuk menjalin komunikasi spiritual dengan Beliau, memohon petunjuk serta arahan agar 
+                     setiap kebijakan dan keputusan yang diambil oleh pihak Puri senantiasa mendapatkan restu dan sesuai dengan kehendak-Nya.</p>
+
+                <a href="virtual-tour/index.htm" class="btn" style="display: inline-block; margin-top: 25px;">Kunjungi Virtual Tour</a>
+            </article>
+
+            <aside class="sidebar">
+                <h3>Telusuri Lebih Lanjut</h3>
+                <div class="postingan-terakhir-list">
+                    <div class="postingan-item">
+                        <img src="img/img4.jpg" alt="Postingan 1">
+                        <div class="postingan-info">
+                            <a href="raja-dani.html">Saren Raja Dani</a>
+                        </div>
+                    </div>
+                    <div class="postingan-item">
+                        <img src="img/img5.jpg" alt="Postingan 2">
+                        <div class="postingan-info">
+                            <a href="pura.html">Areal Pura</a>
+                        </div>
+                    </div>
+                    <div class="postingan-item">
+                        <img src="img/img8.jpg" alt="Postingan 3">
+                        <div class="postingan-info">
+                            <a href="jaba-sisi.html">Jaba Sisi</a>
+                        </div>
+                    </div>
+                    <div class="postingan-item">
+                        <img src="img/img15.jpg" alt="Postingan 3">
+                        <div class="postingan-info">
+                            <a href="saren-rangki.html">Saren Rangki</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+      <footer class="page-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="logo-area">
+                    <img src="img/logopuri.png" lt="logo2" class="logo2">
+                </div>
+                <div class="details-area">
+                    <h2 class="hotel-name">PURI AGENG BLAHBATUH</h2>
+                    <p class="address">Jl. Wisma Udayana No.2X, Blahbatuh, Kec. Blahbatuh, <br> Kabupaten Gianyar, Bali </p>
+                </div>
+           
+             <div class="contact-area">
+                <p><strong>Email:</strong><br>sales@balipuri.com</p>
+                <p href="https://instagram.com/puri_blahbatuh" target="_blank"><strong>Instagram:</strong><br>@puri_blahbatuh</p>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-left">
+                    <p class="copyright">2025 - ITB STIKOM BALI</p>
+                </div>
+            </div>
+            </div>
+        </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang - Puri Ageng Blahbatuh</title>
+    <link rel="icon" type="image/png" href="img/logopuri.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <img src="img/logopuri 2.png" alt="Logo" class="logo">
+        <button class="hamburger" id="hamburger">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" data-id="nav-beranda">Beranda</a></li>
+                <li><a href="informasi.html" data-id="nav-daya">Informasi</a></li>
+                <li><a href="daya-tarik.html" data-id="nav-">Daya Tarik</a></li>
+                <li><a href="galeri.html" data-id="nav-galeri">Galeri</a></li>
+                <li><a href="virtual-tour/index.htm" data-id="nav-tour">Virtual Tour</a></li>
+                <li><a href="tentang.html" data-id="nav-tentang">Tentang</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher"></div>
+    </header>
+
+    <main class="main-content">
+        <div class="tentang-container">
+            <h1>Tentang</h1>
+            <p class="tentang-subtitle">
+                Saya Mengucapkan Terima Kasih Atas kontribusinya dalam pembuatan Tugas Akhir ini kepada:
+            </p>
+
+            <div class="credits-grid">
+                <div class="credits-row">
+                    <div class="credit-item">
+                        <img src="https://placehold.co/360x482/ff8c61/ffffff?text=360+x+482" alt="Foto Pembimbing 1">
+                        <p class="credit-role">Pembimbing 1</p>
+                        <p class="credit-name">I Putu Ramayasa, S.Kom, M.Kom</p>
+                    </div>
+                    <div class="credit-item">
+                        <img src="https://placehold.co/360x482/ff8c61/ffffff?text=360+x+482" alt="Foto Pembimbing 2">
+                        <p class="credit-role">Pembimbing 2</p>
+                        <p class="credit-name">Dr. Maryam Dunggio, S.T., M.M.</p>
+                    </div>
+                    <div class="credit-item">
+                        <img src="https://placehold.co/360x482/ff8c61/ffffff?text=360+x+482"
+                            alt="Foto Penglingsir Puri">
+                        <p class="credit-role">Penglingsir Puri Ageng Blahbatuh</p>
+                        <p class="credit-name">Anak Agung Ngurah Kakarsana</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <p class="tentang-subtitle">
+                Mahasiswa ITB STIKOM BALI:
+                </p>
+                <div class="credits-row">
+                    <div class="credit-item">
+                        <img src="https://placehold.co/360x482/ff8c61/ffffff?text=360+x+482" alt="Foto Mahasiswa">
+                        <p class="credit-name">I Gusti Ngurah Agung Gede Krishna Ningrat</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+     <footer class="page-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="logo-area">
+                    <img src="img/logopuri.png" lt="logo2" class="logo2">
+                </div>
+                <div class="details-area">
+                    <h2 class="hotel-name">PURI AGENG BLAHBATUH</h2>
+                    <p class="address">Jl. Wisma Udayana No.2X, Blahbatuh, Kec. Blahbatuh, <br> Kabupaten Gianyar, Bali </p>
+                </div>
+                <div class="contact-area">
+                    <p><strong>Email:</strong><br>sales@balipuri.com</p>
+                    <p href="https://instagram.com/puri_blahbatuh" target="_blank"><strong>Instagram:</strong><br>@puri_blahbatuh</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-left">
+                    <p class="copyright">2025 - ITB STIKOM BALI</p>
+                </div>
+            </div>
+            </div>
+        </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

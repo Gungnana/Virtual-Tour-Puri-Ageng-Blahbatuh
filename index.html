@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Puri Ageng Blahbatuh</title>
+    <link rel="icon" type="image/png" href="img/logopuri.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    .telusuri-link {
+    display: block;
+    text-align: center;
+    margin-top: -30px; /* Mengurangi jarak dari judul di atasnya */
+    margin-bottom: 35px; /* Memberi jarak ke slider di bawahnya */
+    color: #b36200; /* Menggunakan warna tema yang konsisten */
+    text-decoration: none;
+    font-family: "Pontano Sans", sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.telusuri-link:hover {
+    color: #333; /* Warna menjadi lebih gelap saat disentuh mouse */
+    text-decoration: underline;
+}
+</style>
+<body>
+    <header class="navbar">
+        <img src="img/logopuri 2.png" alt="Logo" class="logo">
+        <button class="hamburger" id="hamburger">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" data-id="nav-beranda">Beranda</a></li>
+                <li><a href="informasi.html" data-id="nav-daya">Informasi</a></li>
+                <li><a href="daya-tarik.html" data-id="nav-">Daya Tarik</a></li>
+                <li><a href="galeri.html" data-id="nav-galeri">Galeri</a></li>
+                <li><a href="virtual-tour/index.htm" data-id="nav-tour">Virtual Tour</a></li>
+                <li><a href="tentang.html" data-id="nav-tentang">Tentang</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <button class="" onclick="setLanguage('id')"></button>
+            <button class="" onclick="setLanguage('en')"></button>
+        </div>
+    </header>
+
+    <section class="hero" id="beranda">
+        <img src="img/vt1.jpg" alt="Hero" class="hero-bg">
+        <div class="hero-text">
+            <h1 data-id="hero-title">Jelajahi Secara Virtual</h1>
+            <p data-id="hero-desc">
+                Jelajahi keindahan dan keagungan Puri Ageng Blahbatuh, salah satu warisan budaya Bali yang kaya akan
+                sejarah dan nilai luhur. Dalam tur virtual ini, Anda akan diajak menyusuri setiap sudut puri yang masih
+                berdiri kokoh sebagai saksi perjalanan panjang kerajaan Blahbatuh.
+            </p>
+            <a href="virtual-tour/index.htm" class="btn" data-id="btn-tour">Virtual Tour</a>
+        </div>
+    </section>
+
+    <section class="intro" id="sejarah">
+        <h2 data-id="intro-title">Selamat Datang di Website<br>Puri Ageng Blahbatuh</h2>
+        <p data-id="intro-desc">
+            Puri Ageng Blahbatuh merupakan kediaman dari keluarga kerajaan Blahbatuh yang telah ada sejak zaman kerajaan
+            Bali kuno. Sebagai pusat pemerintahan dan kebudayaan, puri ini memiliki peran penting dalam perjalanan
+            sejarah Bali. Arsitektur megahnya mencerminkan nilai-nilai kearifan lokal yang diwariskan dari generasi ke
+            generasi.
+        </p>
+        <a href="sejarah.html" class="btn" data-id="btn-more">Pelajari Lebih Lanjut</a>
+    </section>
+
+    <section class="content" id="video">
+        <div class="content-left">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OM22avtTRts"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="content-right">
+            <h2 data-id="tour-title">Video</h2> 
+            <p data-id="tour-desc">
+                Saksikan megahnya Puri Ageng Blahbatuh, sebuah kerajaan dengan mahakarya arsitektur Bali yang tak lekang oleh waktu.
+            </p>
+        </div>
+    </section>
+
+
+     <section class="room-slider">
+        <div class="slider-container">
+            <h2 class="daya-tarik-title">Daya Tarik</h2>
+            <a href="daya-tarik.html" class="telusuri-link">Telusuri Lebih Lanjut</a>
+            <button class="slider-btn prev" id="prev-btn">❮</button>
+            <button class="slider-btn next" id="next-btn">❯</button>
+
+            <div class="slider-wrapper">
+
+                <div class="slide">
+                    <img src="img/prawedding.jpg" alt="Tampilan Luar">
+                    <div class="slide-text">
+                        <h3>Prawedding & Fotografi</h3>
+                        <p>Abadikan Momen bersama pasangan anda di Puri Ageng Blahbatuh.</p>
+                        <a href="prawedding.html" class="discover-btn">SELENGKAPNYA</a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="img/img4.jpg" alt="">
+                    <div class="slide-text">
+                        <h3>Saren Raja Dani</h3>
+                        <a href="raja-dani.html" class="discover-btn">SELENGKAPNYA</a>
+                    </div>
+                </div>
+                
+                <div class="slide">
+                    <img src="img/img5.jpg" alt="">
+                     <div class="slide-text">
+                        <h3>Areal Pura</h3>
+                         <a href="pura.html" class="discover-btn">SELENGKAPNYA</a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="img/img15.jpg" alt="">
+                     <div class="slide-text">
+                        <h3>Saren Rangki</h3>
+                         <a href="saren-rangki.html" class="discover-btn">SELENGKAPNYA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots"></div>
+    </section>
+
+
+    <section id="galeri" class="gallery-section">
+        <div class="gallery-container">
+            <div class="gallery-header">
+                <h2 class="gallery-title">Galeri Puri Ageng Blahbatuh</h2>
+                <p class="gallery-subtitle">Berisi kegiatan dan suasana di <b>Puri Ageng Blahbatuh</b>.</p>
+            </div>
+
+            <div class="staggered-gallery-container">
+                
+                 <div class="gallery-card">
+                    <img src="img/img34.jpg" alt="">
+                    <div class="card-info">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="img/img26.jpg" alt="">
+                    <div class="card-info">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="gallery-card card-tall">
+                    <img src="img/img23.jpg" alt="">
+                    <div class="card-info">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="img/img29.jpg" alt="">
+                    <div class="card-info">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="img/img33.jpg" alt="">
+                    <div class="card-info">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="img/img32.jpg" alt="">
+                    <div class="card-info">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                 <div class="gallery-card">
+                    <img src="img/img20.jpg" alt="">
+                    <div class="card-info">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <a href="galeri.html" class="btn-galery" data-id="btn-galery">Lihat Lebih Banyak</a>
+            </div>
+
+        </div>
+            <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </section>
+
+    <section class="location" id="galeri">
+        <div class="peta">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.316955210695!2d115.29833927456663!3d-8.565490386883857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd215e22c255f8f%3A0x9eb867aeae7854a1!2sPURI%20AGENG%20BLAHBATUH!5e0!3m2!1sen!2sid!4v1747462815999!5m2!1sen!2sid"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+     <footer class="page-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="logo-area">
+                    <img src="img/logopuri.png" lt="logo2" class="logo2">
+                </div>
+                <div class="details-area">
+                    <h2 class="hotel-name">PURI AGENG BLAHBATUH</h2>
+                    <p class="address">Jl. Wisma Udayana No.2X, Blahbatuh, Kec. Blahbatuh, <br> Kabupaten Gianyar, Bali </p>
+                </div>
+            
+            <div class="contact-area">
+                <p><strong>Email:</strong><br>sales@balipuri.com</p>
+                <p href="https://instagram.com/puri_blahbatuh" target="_blank"><strong>Instagram:</strong><br>@puri_blahbatuh</p>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-left">
+                    <p class="copyright">2025 - ITB STIKOM BALI</p>
+                </div>
+            </div>
+            </div>
+        </footer>
+    <script src="css/script.js"></script>
+</body>
+
+</html>
